@@ -1,16 +1,122 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Assignment 3</title>
+<style>
+  .middle {
+    margin: auto;
+    border-collapse: collapse;
+  }
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
+
+	.td1{
+		padding: 10px;
+	}
+	
+  .green {
+    background-color: green;
+  }
+  .blue {
+    background-color: blue;
+  }
+  table {
+    border: 1px solid black;
+    border-spacing: 1px;
+  }
+  td {
+    padding: 1px;
+  }
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1 style="text-align: center;">HTML Assignment #3</h1>
+  
+  <h2>Table 1</h2>
+  <table id="table-1" style="width: 100%" border="1">
+    <tr>
+      <td id="t11">left</td>
+      <td id="t12" class="center">center</td>
+      <td id="t13" class="right">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+  </table>
+  
+  <h2>Table 2</h2>
+  <table id="table-2" style="width: 100%" border="1">
+    <tr>
+      <td class="td1" id="t21" colspan="6"></td>
+    </tr>
+    <tr>
+      <td class="td1" rowspan="4"></td>
+      <td class="td1"></td>
+      <td class="td1"></td>
+      <td class="td1"></td>
+      <td class="td1"></td>
+      <td class="td1"></td>
+    </tr>
 
+	<tr>
+      
+      <td class="td1"></td>
+      <td class="td1" colspan="3" rowspan="2"></td>
+      <td class="td1"></td>
+      
+    </tr>
+
+	<tr>
+      <td class="td1"></td>
+      
+      <td class="td1"></td>
+    </tr>
+
+	<tr>
+      <td class="td1"></td>
+      <td class="td1"></td>
+      <td class="td1"></td>
+      <td class="td1"></td>
+      <td class="td1"></td>
+      
+      
+    </tr>
+
+	<tr>
+      <td class="td1" colspan="6"></td>
+      
+    </tr>
+    <!-- Repeat rows as needed -->
+  </table>
+  
+  <h2>Table 3</h2>
+  <table id="table-3" class="middle">
+    <tr class="green">
+      <td colspan="2">Green Row</td>
+      <td rowspan="2" id="t-image"><img src="image_url.jpg" alt="Image"></td>
+    </tr>
+    <tr>
+      <td>Row 2, Col 1</td>
+      <td>Row 2, Col 2</td>
+    </tr>
+    <tr>
+      <td>Row 3, Col 1</td>
+      <td>Row 3, Col 2</td>
+      <td class="blue">Blue Row</td>
+    </tr>
+  </table>
 </body>
-
 </html>
